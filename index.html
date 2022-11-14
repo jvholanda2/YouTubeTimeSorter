@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #contents {
+            width: 1000px;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            border: solid;
+        }
+        .style-scope, 
+        .ytd-playlist-video-list-renderer{
+            border: solid red 3px;
+            width: 620px;
+            height: 80px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        .style-scope.ytd-thumbnail span {
+            border: solid blue 3px;
+            padding: 10px;
+            color: white;
+        }
+        .fake-hidden {
+            /* visibility: hidden; */
+            border: solid green 5px;
+        }
+    </style>
+</head>
+<body style="background:  #252525;">
+    <div id="contents" class="div-principal">
+        <div class="style-scope ytd-playlist-video-list-renderer">
+            <div class="style-scope ytd-thumbnail">
+                <span>03:03:02</span>
+            </div>
+        </div>
+        <div class="style-scope ytd-playlist-video-list-renderer">
+            <div class="style-scope ytd-thumbnail">
+                <span>25:03</span>
+            </div>
+        </div>
+        <div class="style-scope ytd-playlist-video-list-renderer" >
+            <div class="style-scope ytd-thumbnail">
+                <span>04:03</span>
+            </div>
+        </div>
+        <div class="style-scope ytd-playlist-video-list-renderer" >
+            <div class="style-scope ytd-thumbnail">
+                <span>35:05</span>
+            </div>
+        </div>
+        <div class="style-scope ytd-playlist-video-list-renderer" >
+            <div class="style-scope ytd-thumbnail">
+                <span>05:01</span>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="capturingTheElements.js"></script>    
+</body>
+</html>
