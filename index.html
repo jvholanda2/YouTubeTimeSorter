@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -36,31 +36,86 @@
 <body style="background:  #252525;">
     <div id="contents" class="div-principal">
         <div class="style-scope ytd-playlist-video-list-renderer">
-            <div class="style-scope ytd-thumbnail">
-                <span>03:03:02</span>
+            <div class="style-scope ytd-thumbnail style-scope ytd-thumbnail-overlay-time-status-renderer">
+                <span id="#text" class="style-scope ytd-thumbnail-overlay-time-status-renderer">03:03:02</span>
             </div>
         </div>
         <div class="style-scope ytd-playlist-video-list-renderer">
-            <div class="style-scope ytd-thumbnail">
-                <span>25:03</span>
+            <div class="style-scope ytd-thumbnail style-scope ytd-thumbnail-overlay-time-status-renderer">
+                <span id="#text" class="style-scope ytd-thumbnail-overlay-time-status-renderer">03:02:02</span>
             </div>
         </div>
-        <div class="style-scope ytd-playlist-video-list-renderer" >
-            <div class="style-scope ytd-thumbnail">
-                <span>04:03</span>
+        <div class="style-scope ytd-playlist-video-list-renderer">
+            <div class="style-scope ytd-thumbnail style-scope ytd-thumbnail-overlay-time-status-renderer">
+                <span id="#text" class="style-scope ytd-thumbnail-overlay-time-status-renderer">03:03</span>
             </div>
         </div>
-        <div class="style-scope ytd-playlist-video-list-renderer" >
-            <div class="style-scope ytd-thumbnail">
-                <span>35:05</span>
-            </div>
-        </div>
-        <div class="style-scope ytd-playlist-video-list-renderer" >
-            <div class="style-scope ytd-thumbnail">
-                <span>05:01</span>
+        <div class="style-scope ytd-playlist-video-list-renderer">
+            <div class="style-scope ytd-thumbnail style-scope ytd-thumbnail-overlay-time-status-renderer">
+                <span id="#text" class="style-scope ytd-thumbnail-overlay-time-status-renderer">02:01</span>
             </div>
         </div>
     </div>
     <script type="module" src="capturingTheElements.js"></script>    
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<style>
+#myDIV {
+  height: 250px;
+  width: 250px;
+  overflow: auto;
+  background: coral;
+}
+
+body {
+  margin:500px;
+  height: 8800px;
+  background-color: coral;
+}
+</style>
+
+<body>
+<h1>The Element Object</h1>
+<h2>The scrollIntoView() Method</h2>
+
+<button onclick="myFunction()">Scroll</button>
+
+<p>Click "Scroll" to scroll to the top of the element with id="content".</p>
+
+
+<div id="myDIV">
+  <div id="contents">
+  <p>Some text inside an element.</p>
+  <p>Some text inside an element.</p>
+  <p>Some text inside an element.</p>
+  </div>
+</div>
+<div id="myDIV">
+    <div id="contentss">
+    <p>Some text inside an element.</p>
+    <p>Some text inside an element.</p>
+    <p>Some text inside an element.</p>
+    </div>
+  </div>
+  <div id="myDIV">
+    <div id="content">
+    <p>ultima.</p>
+    <p>Some text inside an element.</p>
+    <p>ultima.</p>
+    </div>
+  </div>
+
+<script>
+function myFunction() {
+  const element = document.getElementsByTagName("body:last-child");
+  element.css()
+  //element.scrollIntoView();
+}
+</script>
+
 </body>
 </html>

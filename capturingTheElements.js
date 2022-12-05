@@ -80,6 +80,7 @@ videoCard.forEach((card)=>{
 for(let i=0; i < arrayTimeVideosSorted.length; i++) {
     console.log(arrayTimeVideosSorted[i]+"fora")
     for(let j=0; j < videoCard.length; j++){
+        console.log(arrayTimeVideosSorted[i]+"dentro")
         if( videoCard[j].innerText == arrayTimeVideosSorted[i] )
         currentDiv.append(videoCard[j])
     }
@@ -92,39 +93,6 @@ for(let i=0; i < arrayTimeVideosSorted.length; i++) {
 
 
 
-
-// function addElement (array) {
-//     console.log(array)
-//     let newDiv = document.createElement("div");
-//     let currentDiv = document.getElementById("contents");
-//     currentDiv.appendChild(newDiv)
-//     newDiv.classList.add('fake-hidden');
-
-    
-//     newDiv.appendChild(
-//         document.querySelectorAll('.style-scope')[1]
-//     )
-    
-//     //document.newDiv.appendChild(print[0])
-
-//     // div principal
-// // const corpo = document.querySelector('.corpo');
-
-// // // criar nova div
-// // const tudo = document.createElement('div');
-// // tudo.setAttribute('class', 'tudo');
-// // // copiar os filhos da div principal para a nova div
-// // for (const child of corpo.childNodes) {
-// //     // cloneNode(true) para deep copy (clona também os filhos, netos, etc)
-// //     tudo.appendChild(child.cloneNode(true));
-// // }
-
-// // // substituir os filhos da div principal pela nova div
-// // corpo.replaceChildren(tudo);
-
-// // // mostra o HTML final
-// // console.log(corpo.outerHTML);
-// }
 
 //document.body.onload = addElement;
 

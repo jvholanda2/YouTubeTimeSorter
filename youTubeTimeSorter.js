@@ -1,4 +1,4 @@
-//Função para tratar os tempos recebidos em números, trocando : po .
+//Função para tratar os tempos recebidos em números, trocando : por .
 function changeFormatTimeVideos(unprocessedArrayTimeVideos, arrayProcessed){
     var time2 = []
     unprocessedArrayTimeVideos.forEach(time => {
@@ -7,6 +7,7 @@ function changeFormatTimeVideos(unprocessedArrayTimeVideos, arrayProcessed){
     })
 }
 
+//Função para tratar os tempos recebidos em números, trocando . por :
 function changeToCorrectFormatTimeVideos(unprocessedArrayTimeVideos, arrayProcessed){
     var time2 = []
     unprocessedArrayTimeVideos.forEach(time => {
@@ -33,24 +34,5 @@ function splitSortJoinTimeVideos(arrayLenghtVideos) {
     changeToCorrectFormatTimeVideos(arraySortedTimeVideosProv, arraySortedTimeVideos)     
     return arraySortedTimeVideos
 }
-
-
-// changeFormatTimeVideos(numberTestSort, numberTestSortProcessed); 
-// // sortLenghtTimeVideos(numberTestSortProcessed);
-// // console.log(numberTestSortProcessed); 
-
-// console.log(splitSortJoinTimeVideos(numberTestSortProcessed))
-
-
-
-
-
-//Scrollar a pagina até o final
-//Pegar todos os elementos, colocar no array hora e posição
-//<div id="contents">
-//  <ytd-playlist-video-renderer>TAG DE CADA CARD DO VÍDEO</ytd-playlist-video-renderer>
-//</div>
-//ordenar via hora alterando a posição de acordo com a hora em ordenação crescente
-//Alterar os elementos na ordem do novo array de posição
 
 export { changeFormatTimeVideos, splitSortJoinTimeVideos }
